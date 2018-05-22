@@ -10,8 +10,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgApp.controller.RetirementController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="600.0" style="-fx-background-color: url(&quot;background1.jpg&quot;);" styleClass="button" stylesheets="@Styling.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgApp.controller.RetirementController">
    <bottom>
       <HBox prefHeight="35.0" prefWidth="410.0" BorderPane.alignment="CENTER">
          <children>
@@ -28,7 +29,10 @@
    <top>
       <HBox alignment="TOP_CENTER" prefHeight="45.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Label text="Retirement Calculator" />
+            <Label style="-fx-font-size: 12px; -fx-font-weight: bold; -fx-text-fill: #333333; -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );" stylesheets="@Styling.css" text="Retirement Calculator">
+               <font>
+                  <Font size="23.0" />
+               </font></Label>
          </children>
       </HBox>
    </top>
